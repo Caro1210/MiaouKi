@@ -1,0 +1,51 @@
+// Section nomination
+body {
+    max-width: 1440px;
+  }
+.nomination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    height: 500px;
+
+
+    .sunflower {
+        position: relative;
+        top: -40%;
+        left: 10%;
+    }
+    
+    .orchid {
+        position: relative;
+        right: -5%;
+        top: -50%;
+    }
+
+    &_title {
+        width: 60%;
+        height: 300px; 
+        text-align: left;      
+
+        img {
+            width: 100%;
+        }
+
+        h3 {
+            position: relative;
+            bottom: 100%;
+            text-align: left;    
+        }
+    }
+
+    .oscars_logo {
+        position: relative;
+        height: 130px;
+        width: 280px;
+    }    
+}
+
+// delete styles ::before & ::after
+.site-footer::before, .site-footer::after {
+  display: none;
+}

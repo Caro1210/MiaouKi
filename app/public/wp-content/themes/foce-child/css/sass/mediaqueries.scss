@@ -1,0 +1,48 @@
+//Banner 
+@media (max-width: 768px) {
+    .banner {
+      min-height: 400px;
+    }
+  
+    .banner__video {
+      display: none; // Masquer la vidéo en version mobile
+    }
+  
+    .banner__logo {
+      display: block; // Afficher l'image en version mobile
+    }
+  }
+  
+@media (max-width: 1024px) {
+    .banner {
+      max-width: 1024px;
+      height: auto;
+    }
+  }
+
+//Flowers
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .story h2::after,
+    .story__article::after,
+    #studio h2::after,
+    #studio h2::before,
+    .nomination::before,
+    .nomination::after,
+    .sunflower,
+    .orchid {
+      display: none;
+    }
+  }
+
+  //studio
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    #studio {
+      > div {
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  
