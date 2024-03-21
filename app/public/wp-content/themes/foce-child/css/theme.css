@@ -21,7 +21,7 @@ body {
 }
 .nomination_title {
   width: 60%;
-  height: 300px;
+  height: 78%;
   text-align: left;
 }
 .nomination_title img {
@@ -34,8 +34,8 @@ body {
 }
 .nomination .oscars_logo {
   position: relative;
-  height: 130px;
-  width: 280px;
+  height: 28%;
+  width: 16%;
 }
 
 .site-footer::before, .site-footer::after {
@@ -208,19 +208,228 @@ h2::after,
     font-size: 30px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .nomination {
-    flex-wrap: wrap !important;
+@media (max-width: 1192px) {
+  #story h3 {
+    font-size: 26px;
   }
-  .nomination::before {
-    display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .story #place h3 {
+    margin-bottom: -5em !important;
+    font-size: 30px;
+  }
+  .story #place img.clouds {
+    left: -20% !important;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 574px) {
+  .nomination {
+    height: auto;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .sunflower,
+  .orchid {
+    position: static;
+    margin: 0 auto 20px;
+  }
+  .nomination_title {
+    width: 90%;
+    text-align: center;
+    position: relative;
+  }
+  .nomination_title img {
+    width: 100%;
+  }
+  .nomination_title h3 {
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
+    position: absolute !important;
+    bottom: 10%;
+    left: -4%;
+  }
+  .oscars_logo {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 475px) and (max-width: 601px) {
+  .nomination {
+    height: auto;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .nomination .sunflower,
+  .nomination .orchid {
+    position: static;
+    margin: 0 auto 20px;
   }
   .nomination .nomination_title {
-    min-width: 300px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+  }
+  .nomination .nomination_title img {
+    width: 100%;
   }
   .nomination .nomination_title h3 {
-    font-size: 15px;
-    margin-top: 188px;
+    text-align: center;
+    margin: 0;
+    font-size: 19px;
+    position: absolute !important;
+    bottom: 10%;
+    left: -4%;
+  }
+  .nomination .oscars_logo {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 602px) and (max-width: 768px) {
+  .nomination {
+    height: auto;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .nomination .sunflower,
+  .nomination .orchid {
+    position: static;
+    margin: 0 auto 20px;
+  }
+  .nomination .nomination_title {
+    width: 90%;
+    text-align: center;
+    position: relative;
+  }
+  .nomination .nomination_title img {
+    width: 100%;
+  }
+  .nomination .nomination_title h3 {
+    text-align: center;
+    margin: 0;
+    font-size: 26px;
+    position: absolute !important;
+    bottom: 10%;
+    left: -4%;
+  }
+  .nomination .oscars_logo {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 900px) {
+  .nomination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    height: 500px;
+  }
+  .nomination .sunflower {
+    position: relative;
+    top: -50%;
+    left: 10%;
+  }
+  .nomination .orchid {
+    position: relative;
+    right: -5%;
+    top: -50%;
+  }
+  .nomination_title {
+    width: 60%;
+    height: 78%;
+    text-align: left;
+  }
+  .nomination_title img {
+    width: 100%;
+  }
+  .nomination_title h3 {
+    position: relative;
+    bottom: 46%;
+    text-align: left;
+    font-size: 19px;
+  }
+  .nomination .oscars_logo {
+    position: relative;
+    height: 28%;
+    width: 16%;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1080px) {
+  .nomination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    height: 500px;
+  }
+  .nomination .sunflower {
+    position: relative;
+    top: -50%;
+    left: 10%;
+  }
+  .nomination .orchid {
+    position: relative;
+    right: -5%;
+    top: -50%;
+  }
+  .nomination_title {
+    width: 60%;
+    height: 78%;
+    text-align: left;
+  }
+  .nomination_title img {
+    width: 100%;
+  }
+  .nomination_title h3 {
+    position: relative;
+    bottom: 57%;
+    text-align: left;
+    font-size: 24px;
+  }
+  .nomination .oscars_logo {
+    position: relative;
+    height: 28%;
+    width: 16%;
+  }
+}
+@media screen and (min-width: 1081px) and (max-width: 1380px) {
+  .nomination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    height: 500px;
+  }
+  .nomination .sunflower {
+    position: relative;
+    top: -50%;
+    left: 10%;
+  }
+  .nomination .orchid {
+    position: relative;
+    right: -5%;
+    top: -50%;
+  }
+  .nomination_title {
+    width: 60%;
+    height: 78%;
+    text-align: left;
+  }
+  .nomination_title img {
+    width: 100%;
+  }
+  .nomination_title h3 {
+    position: relative;
+    bottom: 70%;
+    text-align: left;
+    font-size: 30px;
+  }
+  .nomination .oscars_logo {
+    position: relative;
+    height: 28%;
+    width: 16%;
   }
 }
 .story #place {

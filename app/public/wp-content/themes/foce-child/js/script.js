@@ -1,6 +1,7 @@
 //test
 console.log("Le script script.js est chargé avec succès !");
 
+
 // Carrousel configuration
 document.addEventListener("DOMContentLoaded", function() {
   const imagesChatsSwiper = document.querySelectorAll(".swiper-slide img");
@@ -34,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+
 // Clouds Parallax
 function moveElementOnScroll(element, maxTranslation) {
   let rect = element.getBoundingClientRect();
@@ -47,15 +49,16 @@ function moveElementOnScroll(element, maxTranslation) {
   }
 }
 
+
 // Event Listeners clouds'scroll
 window.addEventListener("scroll", function () {
   let Clouds = document.querySelector(".clouds");
   if (Clouds) moveElementOnScroll(Clouds, -300);
 });
 
+
 //Titles
 const animationTitles = document.querySelectorAll(".title__animation");
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -64,5 +67,4 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 });
-
 animationTitles.forEach((span) => observer.observe(span));
