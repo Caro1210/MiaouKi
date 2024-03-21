@@ -89,7 +89,7 @@ h2::after,
 .orchid,
 .site-footer ul::after {
   line-height: 0;
-  animation: rotate_flower 14s linear infinite;
+  animation: rotate_flower 25s linear infinite;
   overflow: auto;
 }
 
