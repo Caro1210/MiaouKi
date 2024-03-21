@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let ticking = false;
   
     function doSomething(scroll_pos) {
-        let speed = scroll_pos / 300; 
+        let speed = scroll_pos / 150; 
         let elements = ['.orchid', '.sunflower'];
         elements.forEach((selector) => {
             let element = document.querySelector(selector);
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
-    
+
     window.addEventListener('scroll', function(e) {
       last_known_scroll_position = window.scrollY;
       if (!ticking) {
