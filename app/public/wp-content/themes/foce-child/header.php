@@ -10,7 +10,6 @@
  */
 
 ?>
-
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -28,19 +27,44 @@
 
 	<header id="masthead" class="site-header">
 		<nav id="site-navigation" class="main-navigation">
-            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </button>
-            <ul>
-                <li><a href="#story">Histoire</a></li>
-                <li><a href="#characters">Personnages</a></li>
-                <li class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
-                <li><a href="#place">Lieu</a></li>
-                <li><a href="#studio">Studio Koukaki</a></li>
-            
-            </ul>
+        
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-title" rel="home"><?php bloginfo( 'name' ); ?></a>
+            <div class="burger">
+                <span class="top_bar"></span>
+                <span class="middle_bar"></span>
+                <span class="bottom_bar"></span>                
+                
+                <ul class="nav_menu">
+                    <div class="nav_container">
+                        <li><a href="#story" class="nav_link">Histoire</a></li>
+                        <li><a href="#characters" class="nav_link">Personnages</a></li>
+                        <li><a href="#place" class="nav_link">Lieu</a></li>
+                        <li><a href="#studio" class="nav_link">Studio Koukaki</a></li>
+                    </div>
+                </ul>
+                
+                <div class="logo_menu">
+                    <img id="#logo_menu" class="logo_mini" src="<?php echo get_stylesheet_directory_uri().'/assets/images/mini_foce.png'?>" alt="Logo Koukaki">
+                </div>
+                
+                <div class="flowers_menu">
+                    <img class="orchid_burger" src="<?php echo get_stylesheet_directory_uri().'/assets/images/orchid.png' ?>" alt="Fleur d'orchidée">
+                    <img class="sunflower_burger" src="<?php echo get_stylesheet_directory_uri().'/assets/images/Sunflower.png'?>" alt="Fleur de paquerette">
+                    <img class="flower_burger" src="<?php echo get_stylesheet_directory_uri().'/assets/images/flower.png'?>" alt="Fleur orange">
+                    <img class="random_flower_burger" src="<?php echo get_stylesheet_directory_uri().'/assets/images/random_flower.png'?>" alt="Fleur rose">
+                    <img class="hibiscus_burger" src="<?php echo get_stylesheet_directory_uri().'/assets/images/Hibiscus.png'?>" alt="Fleur d'hibiscus">
+                </div>
+                
+                <div class="cats_menu">
+                    <img class="purple_cat" src="<?php echo get_stylesheet_directory_uri().'/assets/images/purple_cat.png'?>" alt="Tête de chat violet">
+                    <img class="grey_cat" src="<?php echo get_stylesheet_directory_uri().'/assets/images/grey_cat.png'?>" alt="Tête de chat gris">
+                    <img class="orange_cat" src="<?php echo get_stylesheet_directory_uri().'/assets/images/orange_cat.png'?>" alt="Tête de chat orange">
+                </div>
+                
+                <div class="copyr_menu">
+                    <p class="copyr_burger">STUDIO KOUKAKI</p>
+                </div>
+            </div>
 
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

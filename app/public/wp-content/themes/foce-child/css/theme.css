@@ -448,4 +448,274 @@ h2::after,
   left: 60%;
 }
 
+a.site-title {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5%;
+}
+
+.burger {
+  cursor: pointer;
+  margin-left: 85%;
+  margin-top: -2%;
+}
+
+.burger.active .top_bar {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.burger.active .middle_bar {
+  opacity: 0;
+}
+
+.burger.active .bottom_bar {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.burger .top_bar,
+.burger .middle_bar,
+.burger .bottom_bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+.nav_menu,
+.logo_menu,
+.flowers_menu,
+.cats_menu,
+.copyr_menu {
+  position: fixed;
+  top: -300%;
+  left: 0;
+  flex-direction: column;
+  background-color: #FFF5E9;
+  width: 100%;
+  text-align: center;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.nav_menu.active,
+.logo_menu.active,
+.flowers_menu.active,
+.cats_menu.active,
+.copyr_menu.active {
+  left: 0;
+  top: 80px;
+}
+
+.nav_container {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 60px;
+}
+
+.nav_link {
+  font-size: 35px;
+  transition: 0.7s ease;
+  pointer-events: auto;
+}
+
+.nav_link:hover {
+  color: black;
+  text-shadow: 0 0 10px #FF5C00;
+  transition: opacity 0.3s;
+}
+
+.logo_menu {
+  display: flex;
+  align-items: center;
+}
+
+.logo_mini {
+  width: 200px;
+  height: auto;
+}
+
+.orchid_burger,
+.sunflower_burger,
+.flower_burger,
+.random_flower_burger,
+.hibiscus_burger {
+  position: absolute;
+  animation: rotate_flower 16s linear infinite;
+  height: auto;
+}
+
+.orchid_burger {
+  top: 50px;
+  left: -55px;
+  width: 150px;
+}
+
+.sunflower_burger {
+  top: 60px;
+  left: 70%;
+  width: 180px;
+}
+
+.flower_burger {
+  top: 380px;
+  left: 20%;
+  width: 50px;
+}
+
+.random_flower_burger {
+  top: 300px;
+  right: -20px;
+  width: 55px;
+}
+
+.hibiscus_burger {
+  top: 525px;
+  right: -220px;
+  width: 30%;
+}
+
+.purple_cat,
+.grey_cat,
+.orange_cat {
+  position: absolute;
+  height: auto;
+}
+
+.purple_cat {
+  top: 130px;
+  left: 20%;
+  width: 120px;
+  animation: floating_purple_cat 7s 1.5s infinite ease-in-out;
+}
+
+.grey_cat {
+  top: 350px;
+  left: 70%;
+  width: 130px;
+  animation: floating_grey_cat 7s 1.5s infinite ease-in-out;
+}
+
+.orange_cat {
+  top: 550px;
+  left: 7%;
+  width: 95px;
+  animation: floating_orange_cat 7s 1.5s infinite ease-in-out;
+}
+
+@keyframes floating_purple_cat {
+  0% {
+    transform: translate3d(-5px, 10px, 0);
+  }
+  15% {
+    transform: translate3d(8px, -7px, 0);
+  }
+  50% {
+    transform: translate3d(-5px, 2px, 0);
+  }
+  70% {
+    transform: translate3d(8px, -12px, 0);
+  }
+  100% {
+    transform: translate3d(-5px, 10px, 0);
+  }
+}
+@keyframes floating_grey_cat {
+  0% {
+    transform: translate3d(10px, 5px, 0);
+  }
+  15% {
+    transform: translate3d(0px, -14px, 0);
+  }
+  40% {
+    transform: translate3d(5px, 0px, 0);
+  }
+  50% {
+    transform: translate3d(-8px, 12px, 0);
+  }
+  70% {
+    transform: translate3d(8px, -8px, 0);
+  }
+  88% {
+    transform: translate3d(4px, 2px, 0);
+  }
+  100% {
+    transform: translate3d(10px, 5px, 0);
+  }
+}
+@keyframes floating_orange_cat {
+  0% {
+    transform: translate3d(3px, 5px, 0);
+  }
+  15% {
+    transform: translate3d(-7px, -14px, 0);
+  }
+  70% {
+    transform: translate3d(-7px, 0px, 0);
+  }
+  100% {
+    transform: translate3d(3px, 5px, 0);
+  }
+}
+.copyr_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 90%;
+  background: transparent;
+}
+
+.copyr_burger {
+  font-size: 16px;
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  a.site-title {
+    left: 1%;
+    font-size: 17px !important;
+    padding-top: 15px;
+  }
+  .burger {
+    cursor: pointer;
+    margin-left: 85%;
+    margin-top: 2%;
+  }
+  .site-header {
+    background-color: #FFD5A2;
+    height: 80px;
+  }
+  .main-navigation .nav_menu {
+    display: flex;
+    height: 50%;
+  }
+  .nav_link {
+    font-size: 16px;
+  }
+  .orchid_burger {
+    left: 10%;
+  }
+  .orchid_burger,
+  .sunflower_burger,
+  .flower_burger,
+  .random_flower_burger,
+  .hibiscus_burger,
+  .purple_cat,
+  .grey_cat,
+  .orange_cat {
+    max-width: 50px;
+  }
+  .sunflower_burger {
+    left: 80%;
+  }
+  .flower_burger {
+    left: 10%;
+  }
+  .copyr_menu {
+    height: 44%;
+  }
+}
+
 /*# sourceMappingURL=theme.css.map */
