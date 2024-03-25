@@ -1,27 +1,28 @@
 //Banner 
 @media (max-width: 768px) {
     .banner {
-      min-height: 400px;
+        min-height: 400px;
     }
-  
+
     .banner__video {
-      display: none; 
+        display: none;
     }
-  
+
     .banner__logo {
-      display: block; 
+        display: block;
     }
-  }
-  
+}
+
 @media (max-width: 1024px) {
     .banner {
-      max-width: 1024px;
-      height: auto;
+        max-width: 1024px;
+        height: auto;
     }
-  }
+}
 
 //Flowers
 @media screen and (min-width: 320px) and (max-width: 768px) {
+
     .story h2::after,
     .story__article::after,
     #studio h2::after,
@@ -30,52 +31,60 @@
     .nomination::after,
     .sunflower,
     .orchid {
-      display: none;
+        display: none;
     }
-  }
+}
 
-  //studio
-  @media screen and (min-width: 320px) and (max-width: 768px) {
+//studio
+@media screen and (min-width: 320px) and (max-width: 768px) {
     #studio {
-      > div {
-        p {
-          text-align: center;
+        >div {
+            p {
+                text-align: center;
+            }
         }
-      }
-      h2 {
-        font-size: 15px;
-        overflow: visible;
-      }
+
+        h2 {
+            font-size: 15px;
+            overflow: visible;
+        }
     }
-  }
+}
 
 //story
-  @media (max-width: 700px) {
+@media (max-width: 700px) {
     #story {
-    h2 {
-      font-size: 30px;
-    }}}
+        h2 {
+            font-size: 30px;
+        }
+    }
+}
 
 @media (max-width: 1192px) {
     #story {
-    h3 {
-      font-size: 26px;
-    }}}
+        h3 {
+            font-size: 26px;
+        }
+    }
+}
 
 // place
-@media screen and (min-width: 320px) and (max-width: 768px){
+@media screen and (min-width: 320px) and (max-width: 768px) {
     .story #place {
         h3 {
-        margin-bottom: -5em !important;
-        font-size: 30px;
+            margin-bottom: -5em !important;
+            font-size: 30px;
+        }
+
+        img.clouds {
+            left: -20% !important;
+        }
     }
-    img.clouds{
-        left: -20% !important;
-    }}}
+}
 
 
 // nomination Oscars
-@media screen and (min-width: 320px) and (max-width: 574px){
+@media screen and (min-width: 320px) and (max-width: 574px) {
     .nomination {
         height: auto;
         flex-direction: column;
@@ -103,7 +112,7 @@
         margin: 0;
         font-size: 15px;
         position: absolute !important;
-        bottom: 10%; 
+        bottom: 10%;
         left: -4%;
     }
 
@@ -141,7 +150,7 @@
         margin: 0;
         font-size: 19px;
         position: absolute !important;
-        bottom: 10%; 
+        bottom: 10%;
         left: -4%;
     }
 
@@ -179,7 +188,7 @@
         margin: 0;
         font-size: 26px;
         position: absolute !important;
-        bottom: 10%; 
+        bottom: 10%;
         left: -4%;
     }
 
@@ -196,42 +205,42 @@
         align-items: center;
         padding-top: 100px;
         height: 500px;
-    
-    
+
+
         .sunflower {
             position: relative;
             top: -50%;
             left: 10%;
         }
-        
+
         .orchid {
             position: relative;
             right: -5%;
             top: -50%;
         }
-    
+
         &_title {
             width: 60%;
-            height: 78%; 
-            text-align: left;      
-    
+            height: 78%;
+            text-align: left;
+
             img {
                 width: 100%;
             }
-    
+
             h3 {
                 position: relative;
                 bottom: 46%;
-                text-align: left;   
-                font-size: 19px; 
+                text-align: left;
+                font-size: 19px;
             }
         }
-    
+
         .oscars_logo {
             position: relative;
             height: 28%;
             width: 16%;
-        }    
+        }
     }
 }
 
@@ -242,42 +251,42 @@
         align-items: center;
         padding-top: 100px;
         height: 500px;
-    
-    
+
+
         .sunflower {
             position: relative;
             top: -50%;
             left: 10%;
         }
-        
+
         .orchid {
             position: relative;
             right: -5%;
             top: -50%;
         }
-    
+
         &_title {
             width: 60%;
-            height: 78%; 
-            text-align: left;      
-    
+            height: 78%;
+            text-align: left;
+
             img {
                 width: 100%;
             }
-    
+
             h3 {
                 position: relative;
                 bottom: 57%;
-                text-align: left;   
-                font-size: 24px; 
+                text-align: left;
+                font-size: 24px;
             }
         }
-    
+
         .oscars_logo {
             position: relative;
             height: 28%;
             width: 16%;
-        }    
+        }
     }
 }
 
@@ -288,42 +297,42 @@
         align-items: center;
         padding-top: 100px;
         height: 500px;
-    
-    
+
+
         .sunflower {
             position: relative;
             top: -50%;
             left: 10%;
         }
-        
+
         .orchid {
             position: relative;
             right: -5%;
             top: -50%;
         }
-    
+
         &_title {
             width: 60%;
-            height: 78%; 
-            text-align: left;      
-    
+            height: 78%;
+            text-align: left;
+
             img {
                 width: 100%;
             }
-    
+
             h3 {
                 position: relative;
                 bottom: 70%;
-                text-align: left;   
-                font-size: 30px; 
+                text-align: left;
+                font-size: 30px;
             }
         }
-    
+
         .oscars_logo {
             position: relative;
             height: 28%;
             width: 16%;
-        }    
+        }
     }
 }
 
@@ -334,7 +343,7 @@
         font-size: 17px !important;
         padding-top: 15px;
     }
-    
+
     .burger {
         cursor: pointer;
         margin-left: 85%;
@@ -342,23 +351,23 @@
     }
 
     .site-header {
-      background-color: #FFD5A2;
-      height: 80px;
+        background-color: #FFD5A2;
+        height: 80px;
     }
 
     .main-navigation .nav_menu {
-      display: flex;
-      height: 50%;
+        display: flex;
+        height: 50%;
     }
-  
+
     .nav_link {
-      font-size: 16px;
+        font-size: 16px;
     }
-  
+
     .orchid_burger {
-      left: 10%;
+        left: 10%;
     }
-  
+
     .orchid_burger,
     .sunflower_burger,
     .flower_burger,
@@ -367,7 +376,7 @@
     .purple_cat,
     .grey_cat,
     .orange_cat {
-      max-width: 50px;
+        max-width: 50px;
     }
 
     .sunflower_burger {
@@ -382,4 +391,3 @@
         height: 44%;
     }
 }
-  

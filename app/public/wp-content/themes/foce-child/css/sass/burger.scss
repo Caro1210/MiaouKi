@@ -9,15 +9,15 @@ a.site-title {
     margin-left: 85%;
     margin-top: -2%;
 }
-  
+
 .burger.active .top_bar {
     transform: translateY(8px) rotate(45deg);
 }
-  
+
 .burger.active .middle_bar {
     opacity: 0;
 }
-  
+
 .burger.active .bottom_bar {
     transform: translateY(-8px) rotate(-45deg);
 }
@@ -32,7 +32,7 @@ a.site-title {
     transition: all 0.3s ease-in-out;
     background-color: black;
 }
-  
+
 .nav_menu,
 .logo_menu,
 .flowers_menu,
@@ -48,7 +48,7 @@ a.site-title {
     transition: 0.5s;
     pointer-events: none;
 }
-  
+
 .nav_menu.active,
 .logo_menu.active,
 .flowers_menu.active,
@@ -57,7 +57,7 @@ a.site-title {
     left: 0;
     top: 80px;
 }
-  
+
 .nav_container {
     height: 60%;
     display: flex;
@@ -65,30 +65,30 @@ a.site-title {
     justify-content: flex-start;
     gap: 60px;
 }
-  
+
 .nav_link {
     font-size: 35px;
     transition: 0.7s ease;
     pointer-events: auto;
 }
-  
+
 .nav_link:hover {
     color: black;
     text-shadow: 0 0 10px #FF5C00;
     transition: opacity 0.3s;
 }
-  
+
 .logo_menu {
     display: flex;
     align-items: center;
 }
-  
+
 .logo_mini {
     width: 200px;
     height: auto;
 }
-  
-  
+
+
 //flowers
 .orchid_burger,
 .sunflower_burger,
@@ -99,38 +99,38 @@ a.site-title {
     animation: rotate_flower 16s linear infinite;
     height: auto;
 }
-  
+
 .orchid_burger {
     top: 50px;
     left: -55px;
     width: 150px;
 }
-  
+
 .sunflower_burger {
     top: 60px;
     left: 70%;
     width: 180px;
 }
-  
+
 .flower_burger {
     top: 380px;
     left: 20%;
     width: 50px;
 }
-  
+
 .random_flower_burger {
     top: 300px;
     right: -20px;
     width: 55px;
 }
-  
+
 .hibiscus_burger {
     top: 525px;
     right: -220px;
     width: 30%;
 }
-  
-  
+
+
 //cats
 .purple_cat,
 .grey_cat,
@@ -138,100 +138,100 @@ a.site-title {
     position: absolute;
     height: auto;
 }
-  
+
 .purple_cat {
     top: 130px;
     left: 20%;
     width: 120px;
     animation: floating_purple_cat 7s 1.5s infinite ease-in-out;
 }
-  
+
 .grey_cat {
     top: 350px;
     left: 70%;
     width: 130px;
     animation: floating_grey_cat 7s 1.5s infinite ease-in-out;
 }
-  
+
 .orange_cat {
     top: 550px;
     left: 7%;
     width: 95px;
     animation: floating_orange_cat 7s 1.5s infinite ease-in-out;
 }
-  
-  
+
+
 // keyframes
 @keyframes floating_purple_cat {
     0% {
-      transform: translate3d(-5px, 10px, 0);
+        transform: translate3d(-5px, 10px, 0);
     }
-  
+
     15% {
-      transform: translate3d(8px, -7px, 0);
+        transform: translate3d(8px, -7px, 0);
     }
-  
+
     50% {
-      transform: translate3d(-5px, 2px, 0);
+        transform: translate3d(-5px, 2px, 0);
     }
-  
+
     70% {
-      transform: translate3d(8px, -12px, 0);
+        transform: translate3d(8px, -12px, 0);
     }
-  
+
     100% {
-      transform: translate3d(-5px, 10px, 0);
+        transform: translate3d(-5px, 10px, 0);
     }
 }
-  
+
 @keyframes floating_grey_cat {
     0% {
-      transform: translate3d(10px, 5px, 0);
+        transform: translate3d(10px, 5px, 0);
     }
-  
+
     15% {
-      transform: translate3d(0px, -14px, 0);
+        transform: translate3d(0px, -14px, 0);
     }
-  
+
     40% {
-      transform: translate3d(5px, 0px, 0);
+        transform: translate3d(5px, 0px, 0);
     }
-  
+
     50% {
-      transform: translate3d(-8px, 12px, 0);
+        transform: translate3d(-8px, 12px, 0);
     }
-  
+
     70% {
-      transform: translate3d(8px, -8px, 0);
+        transform: translate3d(8px, -8px, 0);
     }
-  
+
     88% {
-      transform: translate3d(4px, 2px, 0);
+        transform: translate3d(4px, 2px, 0);
     }
-  
+
     100% {
-      transform: translate3d(10px, 5px, 0);
+        transform: translate3d(10px, 5px, 0);
     }
 }
-  
+
 @keyframes floating_orange_cat {
     0% {
-      transform: translate3d(3px, 5px, 0);
+        transform: translate3d(3px, 5px, 0);
     }
-  
+
     15% {
-      transform: translate3d(-7px, -14px, 0);
+        transform: translate3d(-7px, -14px, 0);
     }
-  
+
     70% {
-      transform: translate3d(-7px, 0px, 0);
+        transform: translate3d(-7px, 0px, 0);
     }
-  
+
     100% {
-      transform: translate3d(3px, 5px, 0);
+        transform: translate3d(3px, 5px, 0);
     }
 }
-  
+
 //* copyright ^^ 
 .copyr_menu {
     display: flex;
@@ -239,9 +239,8 @@ a.site-title {
     justify-content: flex-end;
     height: 90%;
     background: transparent;
-  }
-  
-  .copyr_burger {
+}
+
+.copyr_burger {
     font-size: 16px;
-  }
-  
+}

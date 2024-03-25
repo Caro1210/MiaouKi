@@ -1,7 +1,8 @@
 // Section nomination
 body {
     max-width: 1440px;
-  }
+}
+
 .nomination {
     display: flex;
     justify-content: center;
@@ -15,7 +16,7 @@ body {
         top: -40%;
         left: 10%;
     }
-    
+
     .orchid {
         position: relative;
         right: -5%;
@@ -24,8 +25,8 @@ body {
 
     &_title {
         width: 60%;
-        height: 78%; 
-        text-align: left;      
+        height: 78%;
+        text-align: left;
 
         img {
             width: 100%;
@@ -34,7 +35,7 @@ body {
         h3 {
             position: relative;
             bottom: 100%;
-            text-align: left;    
+            text-align: left;
         }
     }
 
@@ -42,10 +43,11 @@ body {
         position: relative;
         height: 28%;
         width: 16%;
-    }    
+    }
 }
 
 // delete styles ::before & ::after
-.site-footer::before, .site-footer::after {
-  display: none;
+.site-footer::before,
+.site-footer::after {
+    display: none;
 }

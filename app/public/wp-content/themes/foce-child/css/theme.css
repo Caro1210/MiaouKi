@@ -38,7 +38,8 @@ body {
   width: 16%;
 }
 
-.site-footer::before, .site-footer::after {
+.site-footer::before,
+.site-footer::after {
   display: none;
 }
 

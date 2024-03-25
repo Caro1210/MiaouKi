@@ -3,35 +3,35 @@ console.log("Le script script.js est chargé avec succès !");
 
 
 // Carrousel configuration
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const imagesChatsSwiper = document.querySelectorAll(".swiper-slide img");
   imagesChatsSwiper.forEach(img => {
-      img.style.display = "block";
-      img.style.maxWidth = "300px";
+    img.style.display = "block";
+    img.style.maxWidth = "300px";
   });
 
   const swiper = new Swiper(".swiper-container", {
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: "auto",
-      spaceBetween: 150,
-      direction: "horizontal",
-      coverflowEffect: {
-          rotate: 0,
-          stretch: 0,
-          depth: 10,
-          modifier: 1,
-          slideShadows: false,
-      },
-      loop: true,
-      loopedSlides: 0,
-      loopAdditionalSlides: 0,
-      autoplay: {
-          delay: 1000,
-          disableOnInteraction: false,
-      },
-      speed: 850,
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    spaceBetween: 150,
+    direction: "horizontal",
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 10,
+      modifier: 1,
+      slideShadows: false,
+    },
+    loop: true,
+    loopedSlides: 0,
+    loopAdditionalSlides: 0,
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false,
+    },
+    speed: 850,
   });
 });
 

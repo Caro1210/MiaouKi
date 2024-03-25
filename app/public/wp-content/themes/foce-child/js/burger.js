@@ -6,11 +6,11 @@ const burger = document.querySelector(".burger");
 
 // elements 
 const elementsToToggle = [
-  document.querySelector(".nav_menu"),
-  document.querySelector(".logo_menu"),
-  document.querySelector(".flowers_menu"),
-  document.querySelector(".cats_menu"),
-  document.querySelector(".copyr_menu"),
+    document.querySelector(".nav_menu"),
+    document.querySelector(".logo_menu"),
+    document.querySelector(".flowers_menu"),
+    document.querySelector(".cats_menu"),
+    document.querySelector(".copyr_menu"),
 ];
 
 // event listener
@@ -18,8 +18,8 @@ burger.addEventListener("click", toggleMenu);
 
 // menu activated
 function toggleMenu() {
-  burger.classList.toggle("active");
-  elementsToToggle.forEach((element) => element.classList.toggle("active"));
+    burger.classList.toggle("active");
+    elementsToToggle.forEach((element) => element.classList.toggle("active"));
 }
 
 // nav link selection
@@ -30,6 +30,6 @@ navLinks.forEach((link) => link.addEventListener("click", closeMenu));
 
 // close menu
 function closeMenu() {
-  burger.classList.remove("active");
-  elementsToToggle.forEach((element) => element.classList.remove("active"));
+    burger.classList.remove("active");
+    elementsToToggle.forEach((element) => element.classList.remove("active"));
 }
