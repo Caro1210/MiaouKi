@@ -433,7 +433,7 @@ h2::after,
     width: 16%;
   }
 }
-@media (min-width: 300px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
   a.site-title {
     left: 1%;
     font-size: 17px !important;
@@ -475,7 +475,7 @@ h2::after,
     left: 10%;
   }
   .copyr_menu {
-    height: 44%;
+    height: 44% !important;
   }
 }
 .story #place {
