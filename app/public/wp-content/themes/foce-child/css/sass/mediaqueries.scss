@@ -326,3 +326,60 @@
         }    
     }
 }
+
+//Mediaqueries burger
+@media (min-width: 300px) and (max-width: 768px) {
+    a.site-title {
+        left: 1%;
+        font-size: 17px !important;
+        padding-top: 15px;
+    }
+    
+    .burger {
+        cursor: pointer;
+        margin-left: 85%;
+        margin-top: 2%;
+    }
+
+    .site-header {
+      background-color: #FFD5A2;
+      height: 80px;
+    }
+
+    .main-navigation .nav_menu {
+      display: flex;
+      height: 50%;
+    }
+  
+    .nav_link {
+      font-size: 16px;
+    }
+  
+    .orchid_burger {
+      left: 10%;
+    }
+  
+    .orchid_burger,
+    .sunflower_burger,
+    .flower_burger,
+    .random_flower_burger,
+    .hibiscus_burger,
+    .purple_cat,
+    .grey_cat,
+    .orange_cat {
+      max-width: 50px;
+    }
+
+    .sunflower_burger {
+        left: 80%;
+    }
+
+    .flower_burger {
+        left: 10%;
+    }
+
+    .copyr_menu {
+        height: 44%;
+    }
+}
+  
