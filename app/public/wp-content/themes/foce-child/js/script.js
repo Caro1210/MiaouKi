@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     spaceBetween: 150,
     direction: "horizontal",
     coverflowEffect: {
-      rotate: 0,
+      rotate: 15,
       stretch: 0,
       depth: 10,
       modifier: 1,
