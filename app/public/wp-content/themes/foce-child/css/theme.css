@@ -71,51 +71,7 @@ body {
   z-index: 2;
   position: sticky;
   top: 30px;
-  animation: text_image_up 1s, fade_in 1.5s, floating 7s 1.5s infinite ease-in-out;
-}
-
-#story,
-#studio,
-#nomination,
-footer {
-  opacity: 0;
-  animation: fadeInBottom 1s 0.5s ease-out forwards;
-}
-
-.story__article::after,
-h2::after,
-#studio h2::before,
-#studio h2::after,
-.sunflower,
-.orchid,
-.site-footer ul::after {
-  line-height: 0;
-  animation: rotate_flower 25s linear infinite;
-  overflow: auto;
-}
-
-.title__animation {
-  display: inline-block;
-  opacity: 0;
-  transform: translateY(80px);
-}
-
-.show {
-  opacity: 1;
-  transform: translateY(0);
-  transition: transform 1s, opacity 1s;
-}
-
-.show:nth-child(1) {
-  animation: title_up 0.9s ease-in-out forwards;
-}
-
-.show:nth-child(2) {
-  animation: title_up 0.6s ease-in-out forwards;
-}
-
-.show:nth-child(3) {
-  animation: title_up 0.3s ease-in-out forwards;
+  animation: logo_up 1.5s, floating 7s 1.5s infinite ease-in-out;
 }
 
 @keyframes background_image_down {
@@ -140,6 +96,26 @@ h2::after,
     transform: translate3d(8px, -8px, 0);
   }
 }
+@keyframes logo_up {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.story__article::after,
+h2::after,
+#studio h2::before,
+#studio h2::after,
+.sunflower,
+.orchid,
+.site-footer ul::after {
+  line-height: 0;
+  animation: rotate_flower 25s linear infinite;
+  overflow: auto;
+}
+
 @keyframes rotate_flower {
   from {
     transform: rotate(0deg);
@@ -148,6 +124,46 @@ h2::after,
     transform: rotate(360deg);
   }
 }
+.title__animation {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(80px);
+}
+
+@keyframes title_up {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 1s, opacity 1s;
+}
+
+.show:nth-child(1) {
+  animation: title_up 0.9s ease-in-out forwards;
+}
+
+.show:nth-child(2) {
+  animation: title_up 0.6s ease-in-out forwards;
+}
+
+.show:nth-child(3) {
+  animation: title_up 0.3s ease-in-out forwards;
+}
+
+#story,
+#studio,
+#nomination,
+footer {
+  opacity: 0;
+  animation: fadeInBottom 1s 0.5s ease-out forwards;
+}
+
 @keyframes fadeInBottom {
   0% {
     opacity: 0;
@@ -155,14 +171,6 @@ h2::after,
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes title_up {
-  0% {
-    transform: translateY(100px);
-  }
-  100% {
     transform: translateY(0);
   }
 }
